@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>БЛЕКРАША ЧЁРНЫЙ РУССКИЙ МАЛЬЧИК КАПИТАЛЬЧИК И ПУСТИЛ КАПУСТА В ОБОРООООООТ</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .audio-player {
+            margin: 20px auto;
+        }
+        .visualizer {
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bar {
+            width: 5px;
+            height: 50px;
+            background-color: crimson;
+            margin: 0 2px;
+            display: inline-block;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: scaleY(1);
+            }
+            50% {
+                transform: scaleY(2);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <audio id="audio" class="audio-player" controls autoplay loop>
+        <source src="music.mp3" type="audio/mp3">
+        Ваш браузер не поддерживает элемент audio.
+    </audio>
+
+    <div class="visualizer" id="visualizer">
+        <div class="bar" style="animation-delay: 0s;"></div>
+        <div class="bar" style="animation-delay: 0.1s;"></div>
+        <div class="bar" style="animation-delay: 0.2s;"></div>
+        <div class="bar" style="animation-delay: 0.3s;"></div>
+        <div class="bar" style="animation-delay: 0.4s;"></div>
+        <div class="bar" style="animation-delay: 0.5s;"></div>
+        <div class="bar" style="animation-delay: 0.6s;"></div>
+        <div class="bar" style="animation-delay: 0.7s;"></div>
+        <div class="bar" style="animation-delay: 0.8s;"></div>
+        <div class="bar" style="animation-delay: 0.9s;"></div>
+    </div>
+
+    <img src="https://mods-android.ru/wp-content/uploads/2023/08/chity-na-blek-rasha-black-russia-na-android-02.webp" alt="Black Russia">
+    <p style="background-color: blue; color: white;">Блекраша моя любимая игра. Эта игра напоминает что-то на подобие шутера в реальной жизни.<br>
+        В нее также играют 100 миллионов игроков. В этой игре есть скины как в реальной жизни.</p>
+    <p style="text-align: center; color: crimson;">И ее создатели это русские. Также разработчики этой игры устраивают разные турниры. Главные призы 1 миллиард рублей и не только.<br>
+        Это приложение легко скачать.</p>
+    <p style="text-align: center;">1. Заходим в интернет или хром.<br>
+        2. Пишем блекраша.<br>
+        3. Устанавливаем.<br>
+        4. Готово.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeSzDBcPYGxup1cl72TpNzbDMrqfKkerNT6g&s" alt="Install Black Russia" style="text-align: center;">
+    <p>Ваша игра установилась, и вы можете играть в эту крутую игру. Сражайтесь в южном как настоящие мужики, в командной работе с братвой, соло, союзники и др. Получайте опыт и становитесь лучшим.</p>
+
+    <script>
+        cdocument.addEventListener("DOMContentLoaded", function () {
+    const musicToggle = document.getElementById("music-toggle");
+    const musicPlayerContainer = document.getElementById("music-player-container");
+
+    musicToggle.addEventListener("click", function () {
+        musicPlayerContainer.classList.toggle("show");
+        if (musicPlayerContainer.classList.contains("show")) {
+            musicToggle.textContent = "Stop Music";
+        } else {
+            musicToggle.textContent = "Play Music";
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
